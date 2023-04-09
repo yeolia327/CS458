@@ -1,0 +1,1694 @@
+Line# | # then | # else | conditional expression
+3549       0       0           errnum
+3585       0       0           size && !result
+3598       0       0           ptr
+3602       0       0           size && !result
+3845       1       0           !initialized
+3849       1       0           (8192) > (getpagesize())
+3858       0       1           !buffer
+3865       0       1           fstat(fd, &bufstat) < 0 || !((((bufstat.st_mode)) & 61440) == (32768))
+3898       0       11           pagesize == 0 && (pagesize = getpagesize()) == 0
+3901       0       11           save > bufsalloc
+3903       0       0           save > bufsalloc
+3907       0       0           !nbuffer
+3916       228       11           save--
+3925       9       2           bufmapped && bufoffset % pagesize == 0 && bufstat.st_size - bufoffset >= bufalloc - bufsalloc
+3947       0       9           maddr == (caddr_t)-1
+3976       1       1           bufmapped
+3986       10       1           cc > 0
+4017       0       0           beg < lim
+4018       0       0           *beg == '
+'
+4029       0       88           out_file
+4031       0       88           out_line
+4037       0       88           out_byte
+4044       0       88           ferror(stdout)
+4064       0       0           !lastout
+4066       0       0           pending > 0 && lastout < lim
+4069       0       0           (nl = memchr(lastout, '
+', lim - lastout)) != 0
+4089       0       88           !out_quiet && pending > 0
+4094       88       0           !out_quiet
+4098       78       10           lastout
+4099       0       88           i < out_before
+4100       0       0           p > bp
+4101       0       0           p > bp && p[-1] != '
+'
+4107       0       88           (out_before || out_after) && used && p != lastout
+4110       0       88           p < beg
+4118       0       88           nlinesp
+4121       0       0           p < lim
+4123       0       0           (nl = memchr(p, '
+', lim - p)) != 0
+4127       0       0           !out_quiet
+4134       88       0           !out_quiet
+4155       88       10           (b = (*execute)(p, lim - p, &endp)) != 0
+4158       0       88           b == lim && ((b > beg && b[-1] == '
+') || b == beg)
+4160       88       0           !out_invert
+4165       0       0           p < b
+4172       0       10           out_invert && p < lim
+4202       0       11           fillbuf(save) < 0
+4212       0       11           lastout
+4214       1       10           buflim - bufbeg == save
+4217       228       10           lim > beg && lim[-1] != '
+'
+4220       10       0           beg < lim
+4223       0       10           pending
+4228       0       10           i < out_before && beg > bufbeg && beg != lastout
+4231       0       0           beg > bufbeg && beg[-1] != '
+'
+4235       10       0           beg != lastout
+4239       0       10           out_line
+4242       0       1           residue
+4245       0       0           pending
+4275       5       0           matchers[i].name
+4276       1       4           strcmp(name, matchers[i].name) == 0
+4301       0       1           prog && strrchr(prog, '/')
+4321       1       1           (opt = getopt(argc, argv, '0123456789A:B:CEFGVX:bce:f:hiLlnqsvwxy')) != (-1)
+4329       0       0           '0'
+4330       0       0           '1'
+4331       0       0           '2'
+4332       0       0           '3'
+4333       0       0           '4'
+4334       0       0           '5'
+4335       0       0           '6'
+4336       0       0           '7'
+4337       0       0           '8'
+4338       0       0           '9'
+4342       0       0           'A'
+4344       0       0           out_after < 0
+4347       0       0           'B'
+4349       0       0           out_before < 0
+4352       0       0           'C'
+4355       1       0           'E'
+4356       0       1           matcher && strcmp(matcher, 'egrep') != 0
+4360       0       0           'F'
+4361       0       0           matcher && strcmp(matcher, 'fgrep') != 0
+4365       0       0           'G'
+4366       0       0           matcher && strcmp(matcher, 'grep') != 0
+4370       0       0           'V'
+4377       0       0           'X'
+4378       0       0           matcher
+4382       0       0           'b'
+4385       0       0           'c'
+4389       0       0           'e'
+4392       0       0           keyfound
+4398       0       0           'f'
+4399       0       0           strcmp(optarg, '-') != 0
+4404       0       0           !fp
+4410       0       0           keyalloc <= keycc
+4414       0       0           keyfound
+4416       0       0           !feof(fp) && (cc = fread(keys + keycc, 1, keyalloc - keycc, fp)) > 0
+4420       0       0           keycc == keyalloc
+4423       0       0           fp != stdin
+4430       0       0           keycc - oldcc > 0 && keys[keycc - 1] == '
+'
+4434       0       0           'h'
+4437       0       0           'i'
+4438       0       0           'y'
+4441       0       0           'L'
+4447       0       0           'l'
+4451       0       0           'n'
+4454       0       0           'q'
+4457       0       0           's'
+4460       0       0           'v'
+4463       0       0           'w'
+4466       0       0           'x'
+4469       0       0           default
+4474       1       0           !keyfound
+4475       1       0           optind < argc
+4483       0       1           !matcher
+4486       0       1           !setmatcher(matcher) && !setmatcher('default')
+4491       0       1           argc - optind > 1 && !no_filenames
+4496       1       0           optind < argc
+4497       1       1           optind < argc
+4499       1       0           strcmp(argv[optind], '-')
+4504       0       1           desc < 0
+4506       0       0           !suppress_errors
+4515       0       1           desc == 0
+4517       0       1           count_matches
+4519       0       0           out_file
+4523       1       0           count
+4526       0       1           list_files == 1
+4529       0       0           list_files == -1
+4532       1       0           desc != 0
+4540       0       0           count_matches
+4542       0       0           count
+4545       0       0           list_files == 1
+4548       0       0           list_files == -1
+4552       0       1           errseen
+4563       0       1           done
+4568       26       1           c <= 'z'
+4571       26       1           c <= 'Z'
+4574       10       1           c <= '9'
+5096       0       1           compile_stack.stack == ((void *)0)
+5124       1       0           bufp->allocated == 0
+5126       0       1           bufp->buffer
+5136       0       1           !bufp->buffer
+5144       3       1           p != pend
+5146       0       3           0
+5146       0       3           p == pend
+5146       0       3           translate
+5150       0       0           '^'
+5152       0       0           p == pattern + 1 || syntax & ((((1) << 1) << 1) << 1) || at_begline_loc_p(pattern, p, syntax)
+5158       0       0           0
+5158       0       0           b - bufp->buffer + (1) > bufp->allocated
+5158       0       0           0
+5158       0       0           bufp->allocated == (1L << 16)
+5158       0       0           bufp->allocated > (1L << 16)
+5158       0       0           bufp->buffer == ((void *)0)
+5162       0       0           old_buffer != bufp->buffer
+5162       0       0           fixup_alt_jump
+5162       0       0           laststart
+5162       0       0           pending_exact
+5169       0       0           '$'
+5171       0       0           p == pend || syntax & ((((1) << 1) << 1) << 1) || at_endline_loc_p(p, pend, syntax)
+5177       0       0           0
+5177       0       0           b - bufp->buffer + (1) > bufp->allocated
+5177       0       0           0
+5177       0       0           bufp->allocated == (1L << 16)
+5177       0       0           bufp->allocated > (1L << 16)
+5177       0       0           bufp->buffer == ((void *)0)
+5181       0       0           old_buffer != bufp->buffer
+5181       0       0           fixup_alt_jump
+5181       0       0           laststart
+5181       0       0           pending_exact
+5188       1       0           '+'
+5189       1       0           '?'
+5190       0       1           (syntax & ((1) << 1)) || (syntax & (((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+5194       1       0           '*'
+5196       0       1           !laststart
+5198       0       0           syntax & ((((((1) << 1) << 1) << 1) << 1) << 1)
+5200       0       0           !(syntax & (((((1) << 1) << 1) << 1) << 1))
+5221       1       0           p == pend
+5224       0       0           0
+5224       0       0           p == pend
+5224       0       0           translate
+5226       0       0           c == '*' || (!(syntax & ((1) << 1)) && (c == '+' || c == '?'))
+5230       0       0           syntax & ((1) << 1) && c == '\'
+5232       0       0           p == pend
+5234       0       0           0
+5234       0       0           p == pend
+5234       0       0           translate
+5235       0       0           !(c1 == '+' || c1 == '?')
+5255       0       1           !laststart
+5260       1       0           many_times_ok
+5266       0       1           b - bufp->buffer + (3) > bufp->allocated
+5266       0       0           0
+5266       0       0           bufp->allocated == (1L << 16)
+5266       0       0           bufp->allocated > (1L << 16)
+5266       0       0           bufp->buffer == ((void *)0)
+5270       0       0           old_buffer != bufp->buffer
+5270       0       0           fixup_alt_jump
+5270       0       0           laststart
+5270       0       0           pending_exact
+5277       0       1           (translate ? translate[(unsigned char)(*(p - 2))] : (*(p - 2))) == (translate ? translate[(unsigned char)('.')] : ('.')) && zero_times_ok && p < pend && (translate ? translate[(unsigned char)(*p)] : (*p)) == (translate ? translate[(unsigned char)('
+')] : ('
+')) && !(syntax & (((((((1) << 1) << 1) << 1) << 1) << 1) << 1))
+5277       0       1           translate
+5277       0       1           translate
+5279       0       0           translate
+5279       0       0           translate
+5295       0       1           b - bufp->buffer + (3) > bufp->allocated
+5295       0       0           0
+5295       0       0           bufp->allocated == (1L << 16)
+5295       0       0           bufp->allocated > (1L << 16)
+5295       0       0           bufp->buffer == ((void *)0)
+5299       0       0           old_buffer != bufp->buffer
+5299       0       0           fixup_alt_jump
+5299       0       0           laststart
+5299       0       0           pending_exact
+5300       0       1           keep_string_p
+5306       1       0           !zero_times_ok
+5313       0       1           b - bufp->buffer + (3) > bufp->allocated
+5313       0       0           0
+5313       0       0           bufp->allocated == (1L << 16)
+5313       0       0           bufp->allocated > (1L << 16)
+5313       0       0           bufp->buffer == ((void *)0)
+5317       0       0           old_buffer != bufp->buffer
+5317       0       0           fixup_alt_jump
+5317       0       0           laststart
+5317       0       0           pending_exact
+5325       0       0           '.'
+5327       0       0           0
+5327       0       0           b - bufp->buffer + (1) > bufp->allocated
+5327       0       0           0
+5327       0       0           bufp->allocated == (1L << 16)
+5327       0       0           bufp->allocated > (1L << 16)
+5327       0       0           bufp->buffer == ((void *)0)
+5331       0       0           old_buffer != bufp->buffer
+5331       0       0           fixup_alt_jump
+5331       0       0           laststart
+5331       0       0           pending_exact
+5335       2       0           '['
+5339       0       2           p == pend
+5343       1       2           b - bufp->buffer + (34) > bufp->allocated
+5343       0       1           0
+5343       0       1           bufp->allocated == (1L << 16)
+5343       0       1           bufp->allocated > (1L << 16)
+5343       0       1           bufp->buffer == ((void *)0)
+5347       1       0           old_buffer != bufp->buffer
+5347       0       1           fixup_alt_jump
+5347       0       1           laststart
+5347       0       1           pending_exact
+5353       0       2           0
+5353       0       2           b - bufp->buffer + (1) > bufp->allocated
+5353       0       0           0
+5353       0       0           bufp->allocated == (1L << 16)
+5353       0       0           bufp->allocated > (1L << 16)
+5353       0       0           bufp->buffer == ((void *)0)
+5357       0       0           old_buffer != bufp->buffer
+5357       0       0           fixup_alt_jump
+5357       0       0           laststart
+5357       0       0           pending_exact
+5357       0       2           *p == '^'
+5358       0       2           *p == '^'
+5365       0       2           0
+5365       0       2           b - bufp->buffer + (1) > bufp->allocated
+5365       0       0           0
+5365       0       0           bufp->allocated == (1L << 16)
+5365       0       0           bufp->allocated > (1L << 16)
+5365       0       0           bufp->buffer == ((void *)0)
+5369       0       0           old_buffer != bufp->buffer
+5369       0       0           fixup_alt_jump
+5369       0       0           laststart
+5369       0       0           pending_exact
+5375       0       2           (re_opcode_t)b[-2] == charset_not && (syntax & (((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+5382       0       4           p == pend
+5384       0       4           0
+5384       0       4           p == pend
+5384       0       4           translate
+5387       0       4           (syntax & (1)) && c == '\'
+5389       0       0           p == pend
+5391       0       0           0
+5391       0       0           p == pend
+5391       0       0           translate
+5399       2       2           c == ']' && p != p1 + 1
+5404       0       2           had_char_class && c == '-' && *p != ']'
+5411       0       2           c == '-' && !(p - 2 >= pattern && p[-2] == '[') && !(p - 3 >= pattern && p[-3] == '[' && p[-2] == '^') && *p != ']'
+5418       0       0           ret != REG_NOERROR
+5421       2       0           p[0] == '-' && p[1] != ']'
+5426       0       2           0
+5426       0       2           p == pend
+5426       0       2           translate
+5429       0       2           ret != REG_NOERROR
+5435       0       0           syntax & (((1) << 1) << 1) && c == '[' && *p == ':'
+5439       0       0           0
+5439       0       0           p == pend
+5439       0       0           translate
+5443       0       0           p == pend
+5447       0       0           0
+5447       0       0           p == pend
+5447       0       0           translate
+5448       0       0           c == ':' || c == ']' || p == pend || c1 == 6
+5458       0       0           c == ':' && *p == ']'
+5474       0       0           !(((strcmp(str, 'alpha') == 0)) || ((strcmp(str, 'upper') == 0)) || ((strcmp(str, 'lower') == 0)) || ((strcmp(str, 'digit') == 0)) || ((strcmp(str, 'alnum') == 0)) || ((strcmp(str, 'xdigit') == 0)) || ((strcmp(str, 'space') == 0)) || ((strcmp(str, 'print') == 0)) || ((strcmp(str, 'punct') == 0)) || ((strcmp(str, 'graph') == 0)) || ((strcmp(str, 'cntrl') == 0)) || ((strcmp(str, 'blank') == 0)))
+5478       0       0           0
+5478       0       0           p == pend
+5478       0       0           translate
+5480       0       0           p == pend
+5482       0       0           ch < 1 << 8
+5484       0       0           (is_alnum && (1 && ((*__ctype_b_loc())[(int)((ch))] & (unsigned short)_ISalnum))) || (is_alpha && (1 && ((*__ctype_b_loc())[(int)((ch))] & (unsigned short)_ISalpha))) || (is_blank && (1 && ((*__ctype_b_loc())[(int)((ch))] & (unsigned short)_ISblank))) || (is_cntrl && (1 && ((*__ctype_b_loc())[(int)((ch))] & (unsigned short)_IScntrl))) || (is_digit && (1 && ((*__ctype_b_loc())[(int)((ch))] & (unsigned short)_ISdigit))) || (is_graph && (1 && ((*__ctype_b_loc())[(int)((ch))] & (unsigned short)_ISgrc1--
+5599       0       0           c1--
+5615       48       2           (int)b[-1] > 0 && b[b[-1] - 1] == 0
+5622       0       0           '('
+5623       0       0           syntax & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5629       0       0           ')'
+5630       0       0           syntax & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5636       0       0           '
+'
+5637       0       0           syntax & ((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5643       0       0           '|'
+5644       0       0           syntax & ((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5650       0       0           '{'
+5651       0       0           syntax & ((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) && syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5657       0       0           '\'
+5658       0       0           p == pend
+5663       0       0           0
+5663       0       0           p == pend
+5667       0       0           '('
+5668       0       0           syntax & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5675       0       0           (compile_stack.avail == compile_stack.size)
+5679       0       0           compile_stack.stack == ((void *)0)
+5694       0       0           fixup_alt_jump
+5702       0       0           regnum <= 255
+5705       0       0           0
+5705       0       0           b - bufp->buffer + (3) > bufp->allocated
+5705       0       0           0
+5705       0       0           bufp->allocated == (1L << 16)
+5705       0       0           bufp->allocated > (1L << 16)
+5705       0       0           bufp->buffer == ((void *)0)
+5709       0       0           old_buffer != bufp->buffer
+5709       0       0           fixup_alt_jump
+5709       0       0           laststart
+5709       0       0           pending_exact
+5724       0       0           ')'
+5725       0       0           syntax & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5727       0       0           (compile_stack.avail == 0)
+5728       0       0           syntax & ((((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5734       0       0           fixup_alt_jump
+5739       0       0           0
+5739       0       0           b - bufp->buffer + (1) > bufp->allocated
+5739       0       0           0
+5739       0       0           bufp->allocated == (1L << 16)
+5739       0       0           bufp->allocated > (1L << 16)
+5739       0       0           bufp->buffer == ((void *)0)
+5743       0       0           old_buffer != bufp->buffer
+5743       0       0           fixup_alt_jump
+5743       0       0           laststart
+5743       0       0           pending_exact
+5751       0       0           (compile_stack.avail == 0)
+5752       0       0           syntax & ((((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5769       0       0           (compile_stack.stack[compile_stack.avail]).fixup_alt_jump
+5781       0       0           this_group_regnum <= 255
+5787       0       0           0
+5787       0       0           b - bufp->buffer + (3) > bufp->allocated
+5787       0       0           0
+5787       0       0           bufp->allocated == (1L << 16)
+5787       0       0           bufp->allocated > (1L << 16)
+5787       0       0           bufp->buffer == ((void *)0)
+5791       0       0           old_buffer != bufp->buffer
+5791       0       0           fixup_alt_jump
+5791       0       0           laststart
+5791       0       0           pending_exact
+5798       0       0           '|'
+5799       0       0           syntax & (((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) || syntax & ((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5802       0       0           syntax & (((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5807       0       0           b - bufp->buffer + (3) > bufp->allocated
+5807       0       0           0
+5807       0       0           bufp->allocated == (1L << 16)
+5807       0       0           bufp->allocated > (1L << 16)
+5807       0       0           bufp->buffer == ((void *)0)
+5811       0       0           old_buffer != bufp->buffer
+5811       0       0           fixup_alt_jump
+5811       0       0           laststart
+5811       0       0           pending_exact
+5816       0       0           fixup_alt_jump
+5823       0       0           b - bufp->buffer + (3) > bufp->allocated
+5823       0       0           0
+5823       0       0           bufp->allocated == (1L << 16)
+5823       0       0           bufp->allocated > (1L << 16)
+5823       0       0           bufp->buffer == ((void *)0)
+5827       0       0           old_buffer != bufp->buffer
+5827       0       0           fixup_alt_jump
+5827       0       0           laststart
+5827       0       0           pending_exact
+5835       0       0           '{'
+5837       0       0           !(syntax & ((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)) || ((syntax & ((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)) && (syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))) || (p - 2 == pattern && p == pend)
+5853       0       0           p == pend
+5855       0       0           syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5861       0       0           p != pend
+5861       0       0           0
+5861       0       0           p == pend
+5861       0       0           translate
+5861       0       0           (1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISdigit))
+5869       0       0           lower_bound < 0
+5869       0       0           p == pend
+5869       0       0           0
+5869       0       0           p == pend
+5869       0       0           translate
+5871       0       0           c == ','
+5873       0       0           p != pend
+5873       0       0           0
+5873       0       0           p == pend
+5873       0       0           translate
+5873       0       0           (1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISdigit))
+5881       0       0           upper_bound < 0
+5881       0       0           p == pend
+5881       0       0           0
+5881       0       0           p == pend
+5881       0       0           translate
+5882       0       0           upper_bound < 0
+5888       0       0           lower_bound < 0 || upper_bound > ((1 << 15) - 1) || lower_bound > upper_bound
+5891       0       0           syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5897       0       0           !(syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+5899       0       0           c != '\'
+5901       0       0           0
+5901       0       0           p == pend
+5901       0       0           translate
+5904       0       0           c != '}'
+5906       0       0           syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+5915       0       0           !laststart
+5917       0       0           syntax & ((((((1) << 1) << 1) << 1) << 1) << 1)
+5919       0       0           syntax & (((((1) << 1) << 1) << 1) << 1)
+5928       0       0           upper_bound == 0
+5930       0       0           b - bufp->buffer + (3) > bufp->allocated
+5930       0       0           0
+5930       0       0           bufp->allocated == (1L << 16)
+5930       0       0           bufp->allocated > (1L << 16)
+5930       0       0           bufp->buffer == ((void *)0)
+5934       0       0           old_buffer != bufp->buffer
+5934       0       0           fixup_alt_jump
+5934       0       0           laststart
+5934       0       0           pending_exact
+5944       0       0           b - bufp->buffer + (nbytes) > bufp->allocated
+5944       0       0           0
+5944       0       0           bufp->allocated == (1L << 16)
+5944       0       0           bufp->allocated > (1L << 16)
+5944       0       0           bufp->buffer == ((void *)0)
+5948       0       0           old_buffer != bufp->buffer
+5948       0       0           fixup_alt_jump
+5948       0       0           laststart
+5948       0       0           pending_exact
+5967       0       0           upper_bound > 1
+6004       0       0           0
+6004       0       0           p == pend
+6004       0       0           translate
+6006       0       0           !(syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+6008       0       0           p > pattern && p[-1] == '\'
+6013       0       0           'w'
+6015       0       0           0
+6015       0       0           b - bufp->buffer + (1) > bufp->allocated
+6015       0       0           0
+6015       0       0           bufp->allocated == (1L << 16)
+6015       0       0           bufp->allocated > (1L << 16)
+6015       0       0           bufp->buffer == ((void *)0)
+6019       0       0           old_buffer != bufp->buffer
+6019       0       0           fixup_alt_jump
+6019       0       0           laststart
+6019       0       0           pending_exact
+6023       0       0           'W'
+6025       0       0           0
+6025       0       0           b - bufp->buffer + (1) > bufp->allocated
+6025       0       0           0
+6025       0       0           bufp->allocated == (1L << 16)
+6025       0       0           bufp->allocated > (1L << 16)
+6025       0       0           bufp->buffer == ((void *)0)
+6029       0       0           old_buffer != bufp->buffer
+6029       0       0           fixup_alt_jump
+6029       0       0           laststart
+6029       0       0           pending_exact
+6033       0       0           '<'
+6034       0       0           0
+6034       0       0           b - bufp->buffer + (1) > bufp->allocated
+6034       0       0           0
+6034       0       0           bufp->allocated == (1L << 16)
+6034       0       0           bufp->allocated > (1L << 16)
+6034       0       0           bufp->buffer == ((void *)0)
+6038       0       0           old_buffer != bufp->buffer
+6038       0       0           fixup_alt_jump
+6038       0       0           laststart
+6038       0       0           pending_exact
+6041       0       0           '>'
+6042       0       0           0
+6042       0       0           b - bufp->buffer + (1) > bufp->allocated
+6042       0       0           0
+6042       0       0           bufp->allocated == (1L << 16)
+6042       0       0           bufp->allocated > (1L << 16)
+6042       0       0           bufp->buffer == ((void *)0)
+6046       0       0           old_buffer != bufp->buffer
+6046       0       0           fixup_alt_jump
+6046       0       0           laststart
+6046       0       0           pending_exact
+6049       0       0           'b'
+6050       0       0           0
+6050       0       0           b - bufp->buffer + (1) > bufp->allocated
+6050       0       0           0
+6050       0       0           bufp->allocated == (1L << 16)
+6050       0       0           bufp->allocated > (1L << 16)
+6050       0       0           bufp->buffer == ((void *)0)
+6054       0       0           old_buffer != bufp->buffer
+6054       0       0           fixup_alt_jump
+6054       0       0           laststart
+6054       0       0           pending_exact
+6057       0       0           'B'
+6058       0       0           0
+6058       0       0           b - bufp->buffer + (1) > bufp->allocated
+6058       0       0           0
+6058       0       0           bufp->allocated == (1L << 16)
+6058       0       0           bufp->allocated > (1L << 16)
+6058       0       0           bufp->buffer == ((void *)0)
+6062       0       0           old_buffer != bufp->buffer
+6062       0       0           fixup_alt_jump
+6062       0       0           laststart
+6062       0       0           pending_exact
+6065       0       0           '`'
+6066       0       0           0
+6066       0       0           b - bufp->buffer + (1) > bufp->allocated
+6066       0       0           0
+6066       0       0           bufp->allocated == (1L << 16)
+6066       0       0           bufp->allocated > (1L << 16)
+6066       0       0           bufp->buffer == ((void *)0)
+6070       0       0           old_buffer != bufp->buffer
+6070       0       0           fixup_alt_jump
+6070       0       0           laststart
+6070       0       0           pending_exact
+6073       0       0           '''
+6074       0       0           0
+6074       0       0           b - bufp->buffer + (1) > bufp->allocated
+6074       0       0           0
+6074       0       0           bufp->allocated == (1L << 16)
+6074       0       0           bufp->allocated > (1L << 16)
+6074       0       0           bufp->buffer == ((void *)0)
+6078       0       0           old_buffer != bufp->buffer
+6078       0       0           fixup_alt_jump
+6078       0       0           laststart
+6078       0       0           pending_exact
+6081       0       0           '1'
+6081       0       0           '2'
+6081       0       0           '3'
+6081       0       0           '4'
+6081       0       0           '5'
+6082       0       0           '6'
+6082       0       0           '7'
+6082       0       0           '8'
+6082       0       0           '9'
+6083       0       0           syntax & (((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+6088       0       0           c1 > regnum
+6092       0       0           group_in_compile_stack(compile_stack, c1)
+6096       0       0           0
+6096       0       0           b - bufp->buffer + (2) > bufp->allocated
+6096       0       0           0
+6096       0       0           bufp->allocated == (1L << 16)
+6096       0       0           bufp->allocated > (1L << 16)
+6096       0       0           bufp->buffer == ((void *)0)
+6100       0       0           old_buffer != bufp->buffer
+6100       0       0           fixup_alt_jump
+6100       0       0           laststart
+6100       0       0           pending_exact
+6104       0       0           '+'
+6105       0       0           '?'
+6106       0       0           syntax & ((1) << 1)
+6111       0       0           default
+6116       0       0           translate
+6122       0       0           default
+6126       0       0           !pending_exact || pending_exact + *pending_exact + 1 != b || *pending_exact == (1 << 8) - 1 || *p == '*' || *p == '^' || ((syntax & ((1) << 1)) ? *p == '\' && (p[1] == '+' || p[1] == '?') : (*p == '+' || *p == '?')) || ((syntax & ((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)) && ((syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)) ? *p == '{' : (p[0] == '\' && p[1] == '{')))
+6136       0       0           (syntax & ((1) << 1))
+6140       0       0           (syntax & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+6148       0       0           0
+6148       0       0           b - bufp->buffer + (2) > bufp->allocated
+6148       0       0           0
+6148       0       0           bufp->allocated == (1L << 16)
+6148       0       0           bufp->allocated > (1L << 16)
+6148       0       0           bufp->buffer == ((void *)0)
+6152       0       0           old_buffer != bufp->buffer
+6152       0       0           fixup_alt_jump
+6152       0       0           laststart
+6152       0       0           pending_exact
+6156       0       0           0
+6156       0       0           b - bufp->buffer + (1) > bufp->allocated
+6156       0       0           0
+6156       0       0           bufp->allocated == (1L << 16)
+6156       0       0           bufp->allocated > (1L << 16)
+6156       0       0           bufp->buffer == ((void *)0)
+6160       0       0           old_buffer != bufp->buffer
+6160       0       0           fixup_alt_jump
+6160       0       0           laststart
+6160       0       0           pending_exact
+6169       0       1           fixup_alt_jump
+6172       0       1           !(compile_stack.avail == 0)
+6194       0       3           0
+6207       0       0           0
+6208       0       0           0
+6225       29       2           pfrom != loc
+6244       0       0           pfrom != loc
+6281       0       0           p + 1 < pend
+6289       0       0           syntax & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+6292       0       0           syntax & ((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+6307       0       0           this_element >= 0
+6310       0       0           compile_stack.stack[this_element].regnum == regnum
+6328       0       2           p == pend
+6339       0       2           range_start > range_end
+6340       0       0           syntax & (((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+6346       20       2           this_char <= range_end
+6348       0       20           translate
+6348       0       20           translate
+6394       0       0           0
+6402       0       0           fail_stack.stack == ((void *)0)
+6411       0       0           p != pend || !(fail_stack.avail == 0)
+6413       0       0           p == pend
+6438       0       0           duplicate
+6446       0       0           exactn
+6451       0       0           charset
+6452       0       0           j >= 0
+6453       0       0           p[j / 8] & (1 << (j % 8))
+6458       0       0           charset_not
+6460       0       0           j < (1 << 8)
+6463       0       0           j >= 0
+6464       0       0           !(p[j / 8] & (1 << (j % 8)))
+6469       0       0           wordchar
+6470       0       0           j < (1 << 8)
+6471       0       0           re_syntax_table[j] == 1
+6476       0       0           notwordchar
+6477       0       0           j < (1 << 8)
+6478       0       0           re_syntax_table[j] != 1
+6483       0       0           anychar
+6485       0       0           j < (1 << 8)
+6489       0       0           !(bufp->syntax & (((((((1) << 1) << 1) << 1) << 1) << 1) << 1))
+6494       0       0           bufp->can_be_null
+6500       0       0           no_op
+6501       0       0           begline
+6502       0       0           endline
+6503       0       0           begbuf
+6504       0       0           endbuf
+6505       0       0           wordbound
+6506       0       0           notwordbound
+6507       0       0           wordbeg
+6508       0       0           wordend
+6509       0       0           push_dummy_failure
+6513       0       0           jump_n
+6514       0       0           pop_failure_jump
+6515       0       0           maybe_pop_jump
+6516       0       0           jump
+6517       0       0           jump_past_alt
+6518       0       0           dummy_failure_jump
+6519       0       0           0
+6519       0       0           0
+6521       0       0           j > 0
+6529       0       0           (re_opcode_t)*p != on_failure_jump && (re_opcode_t)*p != succeed_n
+6534       0       0           0
+6534       0       0           0
+6538       0       0           !(fail_stack.avail == 0) && fail_stack.stack[fail_stack.avail - 1] == p
+6545       0       0           on_failure_jump
+6546       0       0           on_failure_keep_string_jump
+6548       0       0           0
+6548       0       0           0
+6550       0       0           p + j < pend
+6552       0       0           !(((fail_stack.avail == fail_stack.size) && !((fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *)(destination = (char *)__builtin_alloca(((fail_stack).size << 1) * sizeof(fail_stack_elt_t)) , memcpy((destination), ((fail_stack).stack), ((fail_stack).size * sizeof(fail_stack_elt_t))) , destination) , (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1 , 1)))) ? 0 : ((fail_stack).stack[(fail_stack).avail++] = p + j , 1))
+6552       0       0           ((fail_stack.avail == fail_stack.size) && !((fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *)(destination = (char *)__builtin_alloca(((fail_stack).size << 1) * sizeof(fail_stack_elt_t)) , memcpy((destination), ((fail_stack).stack), ((fail_stack).size * sizeof(fail_stack_elt_t))) , destination) , (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1 , 1))))
+6552       0       0           (fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4)
+6560       0       0           (fail_stack).stack == ((void *)0)
+6570       0       0           succeed_n_p
+6572       0       0           0
+6572       0       0           0
+6579       0       0           succeed_n
+6584       0       0           0
+6584       0       0           0
+6585       0       0           k == 0
+6594       0       0           set_number_at
+6599       0       0           start_memory
+6600       0       0           stop_memory
+6605       0       0           default
+6632       0       0           num_regs
+6684       0       0           startpos < 0 || startpos > total_size
+6689       0       0           endpos < -1
+6691       0       0           endpos > total_size
+6696       0       0           bufp->used > 0 && (re_opcode_t)bufp->buffer[0] == begbuf && range > 0
+6698       0       0           startpos > 0
+6705       0       0           fastmap && !bufp->fastmap_accurate
+6706       0       0           re_compile_fastmap(bufp) == -2
+6716       0       0           fastmap && startpos < total_size && !bufp->can_be_null
+6718       0       0           range > 0
+6724       0       0           startpos < size1 && startpos + range >= size1
+6727       0       0           startpos >= size1
+6731       0       0           translate
+6732       0       0           range > lim && !fastmap[(unsigned char)translate[(unsigned char)*d++]]
+6737       0       0           range > lim && !fastmap[(unsigned char)*d++]
+6744       0       0           size1 == 0 || startpos >= size1
+6748       0       0           !fastmap[(unsigned char)(translate ? translate[(unsigned char)(c)] : (c))]
+6748       0       0           translate
+6754       0       0           range >= 0 && startpos == total_size && fastmap && !bufp->can_be_null
+6760       0       0           val >= 0
+6763       0       0           val == -2
+6767       0       0           !range
+6769       0       0           range > 0
+6898       0       0           0
+6906       0       0           fail_stack.stack == ((void *)0)
+6917       0       0           bufp->re_nsub
+7001       0       0           !(regstart && regend && old_regstart && old_regend && reg_info && best_regstart && best_regend && reg_dummy && reg_info_dummy)
+7017       0       0           pos < 0 || pos > size1 + size2
+7034       0       0           mcnt < num_regs
+7047       0       0           size2 == 0 && string1 != ((void *)0)
+7062       0       0           stop <= size1
+7079       0       0           size1 > 0 && pos <= size1
+7103       0       0           p == pend
+7109       0       0           d != end_match_2
+7113       0       0           !(fail_stack.avail == 0)
+7119       0       0           !best_regs_set || (same_str_p && d > match_end) || (!same_str_p && !(dend == end_match_1))
+7128       0       0           mcnt < num_regs
+7138       0       0           best_regs_set
+7149       0       0           (d >= string1 && d <= end1)
+7152       0       0           mcnt < num_regs
+7163       0       0           regs && !bufp->no_sub
+7166       0       0           bufp->regs_allocated == 0
+7170       0       0           (30) > (num_regs + 1)
+7173       0       0           regs->start == ((void *)0) || regs->end == ((void *)0)
+7185       0       0           bufp->regs_allocated == 1
+7189       0       0           regs->num_regs < num_regs + 1
+7194       0       0           regs->start == ((void *)0) || regs->end == ((void *)0)
+7216       0       0           regs->num_regs > 0
+7219       0       0           (dend == end_match_1)
+7225       0       0           mcnt < ((num_regs) < (regs->num_regs) ? (num_regs) : (regs->num_regs))
+7225       0       0           (num_regs) < (regs->num_regs)
+7227       0       0           ((regstart[mcnt]) == ((char *)-1)) || ((regend[mcnt]) == ((char *)-1))
+7231       0       0           (size1 && string1 <= (regstart[mcnt]) && (regstart[mcnt]) <= string1 + size1)
+7232       0       0           (size1 && string1 <= (regend[mcnt]) && (regend[mcnt]) <= string1 + size1)
+7241       0       0           mcnt < regs->num_regs
+7259       0       0           (dend == end_match_1)
+7277       0       0           no_op
+7285       0       0           exactn
+7291       0       0           translate
+7293       0       0           --mcnt
+7295       0       0           d == dend
+7295       0       0           dend == end_match_2
+7296       0       0           translate[(unsigned char)*d++] != (char)*p++
+7303       0       0           --mcnt
+7305       0       0           d == dend
+7305       0       0           dend == end_match_2
+7306       0       0           *d++ != (char)*p++
+7310       0       0           0
+7310       0       0           r <= highest_active_reg
+7315       0       0           anychar
+7318       0       0           d == dend
+7318       0       0           dend == end_match_2
+7320       0       0           (!(bufp->syntax & (((((((1) << 1) << 1) << 1) << 1) << 1) << 1)) && (translate ? translate[(unsigned char)(*d)] : (*d)) == '
+') || (bufp->syntax & ((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) && (translate ? translate[(unsigned char)(*d)] : (*d)) == '
+7320       0       0           translate
+7321       0       0           translate
+7324       0       0           0
+7324       0       0           r <= highest_active_reg
+7330       0       0           charset
+7331       0       0           charset_not
+7338       0       0           d == dend
+7338       0       0           dend == end_match_2
+7339       0       0           translate
+7343       0       0           c < (unsigned int)(*p * 8) && p[1 + c / 8] & (1 << (c % 8))
+7349       0       0           !not
+7351       0       0           0
+7351       0       0           r <= highest_active_reg
+7362       0       0           start_memory
+7368       0       0           ((reg_info[*p]).bits.match_null_string_p) == 3
+7377       0       0           ((reg_info[*p]).bits.match_null_string_p)
+7378       0       0           ((regstart[*p]) == ((char *)-1))
+7394       0       0           lowest_active_reg == ((1 << 8) + 1)
+7405       0       0           stop_memory
+7413       0       0           ((reg_info[*p]).bits.match_null_string_p)
+7414       0       0           ((regend[*p]) == ((char *)-1))
+7427       0       0           lowest_active_reg == highest_active_reg
+7438       0       0           r > 0 && !((reg_info[r]).bits.is_active)
+7441       0       0           r == 0
+7455       0       0           (!((reg_info[*p]).bits.matched_something) || (re_opcode_t)p[-3] == start_memory) && (p + 2) < pend
+7465       0       0           jump_n
+7467       0       0           pop_failure_jump
+7468       0       0           maybe_pop_jump
+7469       0       0           jump
+7470       0       0           dummy_failure_jump
+7471       0       0           0
+7471       0       0           0
+7472       0       0           is_a_jump_n
+7476       0       0           default
+7486       0       0           mcnt < 0 && (re_opcode_t)*p1 == on_failure_jump && (re_opcode_t)p1[3] == start_memory && p1[4] == *p
+7490       0       0           ((reg_info[*p]).bits.ever_matched_something)
+7497       0       0           r < *p + *(p + 1)
+7502       0       0           (int)old_regend[r] >= (int)regstart[r]
+7507       0       0           0
+7507       0       0           0
+7508       0       0           0
+7508       0       0           ((fail_stack).size - (fail_stack).avail) < ((highest_active_reg - lowest_active_reg + 1) * 3 + 4)
+7508       0       0           !((fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *)(destination = (char *)__builtin_alloca(((fail_stack).size << 1) * sizeof(fail_stack_elt_t)) , memcpy((destination), ((fail_stack).stack), ((fail_stack).size * sizeof(fail_stack_elt_t))) , destination) , (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1 , 1)))
+7508       0       0           (fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4)
+7516       0       0           (fail_stack).stack == ((void *)0)
+7520       0       0           this_reg <= highest_active_reg
+7533       0       0           duplicate
+7540       0       0           ((regstart[regno]) == ((char *)-1)) || ((regend[regno]) == ((char *)-1))
+7551       0       0           ((size1 && string1 <= (regstart[regno]) && (regstart[regno]) <= string1 + size1) == (size1 && string1 <= (regend[regno]) && (regend[regno]) <= string1 + size1))
+7558       0       0           d2 == dend2
+7560       0       0           dend2 == end_match_2
+7561       0       0           dend2 == regend[regno]
+7568       0       0           d2 == dend2
+7571       0       0           d == dend
+7571       0       0           dend == end_match_2
+7578       0       0           mcnt > dend2 - d2
+7583       0       0           translate ? bcmp_translate(d, d2, mcnt, translate) : memcmp((d), (d2), (mcnt))
+7583       0       0           translate
+7596       0       0           begline
+7599       0       0           ((d) == (size1 ? string1 : string2) || !size2)
+7599       0       0           size1
+7601       0       0           !bufp->not_bol
+7603       0       0           d[-1] == '
+' && bufp->newline_anchor
+7612       0       0           endline
+7615       0       0           ((d) == end2)
+7617       0       0           !bufp->not_eol
+7621       0       0           (d == end1 ? *string2 : *d) == '
+' && bufp->newline_anchor
+7621       0       0           d == end1
+7630       0       0           begbuf
+7632       0       0           ((d) == (size1 ? string1 : string2) || !size2)
+7632       0       0           size1
+7638       0       0           endbuf
+7640       0       0           ((d) == end2)
+7644       0       0           on_failure_keep_string_jump
+7647       0       0           0
+7647       0       0           0
+7650       0       0           0
+7650       0       0           ((fail_stack).size - (fail_stack).avail) < ((highest_active_reg - lowest_active_reg + 1) * 3 + 4)
+7650       0       0           !((fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *)(destination = (char *)__builtin_alloca(((fail_stack).size << 1) * sizeof(fail_stack_elt_t)) , memcpy((destination), ((fail_stack).stack), ((fail_stack).size * sizeof(fail_stack_elt_t))) , destination) , (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1 , 1)))
+7650       0       0           (fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4)
+7658       0       0           (fail_stack).stack == ((void *)0)
+7662       0       0           this_reg <= highest_active_reg
+7669       0       0           on_failure_jump
+7673       0       0           0
+7673       0       0           0
+7682       0       0           p1 < pend && (re_opcode_t)*p1 == no_op
+7685       0       0           p1 < pend && (re_opcode_t)*p1 == start_memory
+7692       0       0           lowest_active_reg == ((1 << 8) + 1)
+7697       0       0           0
+7697       0       0           ((fail_stack).size - (fail_stack).avail) < ((highest_active_reg - lowest_active_reg + 1) * 3 + 4)
+7697       0       0           !((fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *)(destination = (char *)__builtin_alloca(((fail_stack).size << 1) * sizeof(fail_stack_elt_t)) , memcpy((destination), ((fail_stack).stack), ((fail_stack).size * sizeof(fail_stack_elt_t))) , destination) , (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1 , 1)))
+7697       0       0           (fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4)
+7705       0       0           (fail_stack).stack == ((void *)0)
+7709       0       0           this_reg <= highest_active_reg
+7715       0       0           maybe_pop_jump
+7716       0       0           0
+7716       0       0           0
+7721       0       0           p2 + 2 < pend && ((re_opcode_t)*p2 == stop_memory || (re_opcode_t)*p2 == start_memory)
+7727       0       0           p2 == pend
+7737       0       0           (re_opcode_t)*p2 == exactn || (bufp->newline_anchor && (re_opcode_t)*p2 == endline)
+7741       0       0           *p2 == (unsigned char)endline
+7747       0       0           (re_opcode_t)p1[3] == exactn && p1[5] != c
+7754       0       0           (re_opcode_t)p1[3] == charset || (re_opcode_t)p1[3] == charset_not
+7759       0       0           c < (unsigned char)(p1[4] * 8) && p1[5 + c / 8] & (1 << (c % 8))
+7765       0       0           !not
+7774       0       0           (re_opcode_t)p[-1] != pop_failure_jump
+7781       0       0           pop_failure_jump
+7793       0       0           string_temp != ((void *)0)
+7797       0       0           this_reg >= dummy_low_reg
+7805       0       0           jump
+7807       0       0           0
+7807       0       0           0
+7816       0       0           jump_past_alt
+7826       0       0           dummy_failure_jump
+7830       0       0           0
+7830       0       0           ((fail_stack).size - (fail_stack).avail) < ((highest_active_reg - lowest_active_reg + 1) * 3 + 4)
+7830       0       0           !((fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *)(destination = (char *)__builtin_alloca(((fail_stack).size << 1) * sizeof(fail_stack_elt_t)) , memcpy((destination), ((fail_stack).stack), ((fail_stack).size * sizeof(fail_stack_elt_t))) , destination) , (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1 , 1)))
+7830       0       0           (fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4)
+7838       0       0           (fail_stack).stack == ((void *)0)
+7842       0       0           this_reg <= highest_active_reg
+7851       0       0           push_dummy_failure
+7855       0       0           0
+7855       0       0           ((fail_stack).size - (fail_stack).avail) < ((highest_active_reg - lowest_active_reg + 1) * 3 + 4)
+7855       0       0           !((fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4) ? 0 : ((fail_stack).stack = (fail_stack_elt_t *)(destination = (char *)__builtin_alloca(((fail_stack).size << 1) * sizeof(fail_stack_elt_t)) , memcpy((destination), ((fail_stack).stack), ((fail_stack).size * sizeof(fail_stack_elt_t))) , destination) , (fail_stack).stack == ((void *)0) ? 0 : ((fail_stack).size <<= 1 , 1)))
+7855       0       0           (fail_stack).size > re_max_failures * ((num_regs - 1) * 3 + 4)
+7863       0       0           (fail_stack).stack == ((void *)0)
+7867       0       0           this_reg <= highest_active_reg
+7872       0       0           succeed_n
+7873       0       0           0
+7878       0       0           mcnt > 0
+7882       0       0           0
+7882       0       0           0
+7885       0       0           mcnt == 0
+7894       0       0           jump_n
+7895       0       0           0
+7899       0       0           mcnt
+7902       0       0           0
+7910       0       0           set_number_at
+7914       0       0           0
+7914       0       0           0
+7916       0       0           0
+7916       0       0           0
+7918       0       0           0
+7922       0       0           wordbound
+7924       0       0           (((d) == (size1 ? string1 : string2) || !size2) || ((d) == end2) || (re_syntax_table[(d - 1) == end1 ? *string2 : (d - 1) == string2 - 1 ? *(end1 - 1) : *(d - 1)] == 1) != (re_syntax_table[(d) == end1 ? *string2 : (d) == string2 - 1 ? *(end1 - 1) : *(d)] == 1))
+7924       0       0           size1
+7924       0       0           (d - 1) == end1
+7924       0       0           (d - 1) == string2 - 1
+7924       0       0           (d) == end1
+7924       0       0           (d) == string2 - 1
+7928       0       0           notwordbound
+7930       0       0           (((d) == (size1 ? string1 : string2) || !size2) || ((d) == end2) || (re_syntax_table[(d - 1) == end1 ? *string2 : (d - 1) == string2 - 1 ? *(end1 - 1) : *(d - 1)] == 1) != (re_syntax_table[(d) == end1 ? *string2 : (d) == string2 - 1 ? *(end1 - 1) : *(d)] == 1))
+7930       0       0           size1
+7930       0       0           (d - 1) == end1
+7930       0       0           (d - 1) == string2 - 1
+7930       0       0           (d) == end1
+7930       0       0           (d) == string2 - 1
+7934       0       0           wordbeg
+7936       0       0           (re_syntax_table[(d) == end1 ? *string2 : (d) == string2 - 1 ? *(end1 - 1) : *(d)] == 1) && (((d) == (size1 ? string1 : string2) || !size2) || !(re_syntax_table[(d - 1) == end1 ? *string2 : (d - 1) == string2 - 1 ? *(end1 - 1) : *(d - 1)] == 1))
+7936       0       0           (d) == end1
+7936       0       0           (d) == string2 - 1
+7936       0       0           size1
+7936       0       0           (d - 1) == end1
+7936       0       0           (d - 1) == string2 - 1
+7940       0       0           wordend
+7942       0       0           !((d) == (size1 ? string1 : string2) || !size2) && (re_syntax_table[(d - 1) == end1 ? *string2 : (d - 1) == string2 - 1 ? *(end1 - 1) : *(d - 1)] == 1) && (!(re_syntax_table[(d) == end1 ? *string2 : (d) == string2 - 1 ? *(end1 - 1) : *(d)] == 1) || ((d) == end2))
+7942       0       0           size1
+7942       0       0           (d - 1) == end1
+7942       0       0           (d - 1) == string2 - 1
+7943       0       0           (d) == end1
+7943       0       0           (d) == string2 - 1
+7947       0       0           wordchar
+7949       0       0           d == dend
+7949       0       0           dend == end_match_2
+7950       0       0           !(re_syntax_table[(d) == end1 ? *string2 : (d) == string2 - 1 ? *(end1 - 1) : *(d)] == 1)
+7950       0       0           (d) == end1
+7950       0       0           (d) == string2 - 1
+7952       0       0           0
+7952       0       0           r <= highest_active_reg
+7956       0       0           notwordchar
+7958       0       0           d == dend
+7958       0       0           dend == end_match_2
+7959       0       0           (re_syntax_table[(d) == end1 ? *string2 : (d) == string2 - 1 ? *(end1 - 1) : *(d)] == 1)
+7959       0       0           (d) == end1
+7959       0       0           (d) == string2 - 1
+7961       0       0           0
+7961       0       0           r <= highest_active_reg
+7966       0       0           default
+7974       0       0           !(fail_stack.avail == 0)
+7977       0       0           string_temp != ((void *)0)
+7981       0       0           this_reg >= lowest_active_reg
+7986       0       0           !p
+7991       0       0           p < pend
+7999       0       0           jump_n
+8001       0       0           maybe_pop_jump
+8002       0       0           pop_failure_jump
+8003       0       0           jump
+8005       0       0           0
+8005       0       0           0
+8008       0       0           (is_a_jump_n && (re_opcode_t)*p1 == succeed_n) || (!is_a_jump_n && (re_opcode_t)*p1 == on_failure_jump)
+8013       0       0           default
+8018       0       0           d >= string1 && d <= end1
+8025       0       0           best_regs_set
+8050       0       0           p1 < end
+8059       0       0           on_failure_jump
+8061       0       0           0
+8061       0       0           0
+8066       0       0           mcnt >= 0
+8069       0       0           (re_opcode_t)p1[mcnt - 3] == jump_past_alt
+8075       0       0           !alt_match_null_string_p(p1, p1 + mcnt - 3, reg_info)
+8085       0       0           (re_opcode_t)*p1 != on_failure_jump
+8091       0       0           0
+8091       0       0           0
+8092       0       0           (re_opcode_t)p1[mcnt - 3] != jump_past_alt
+8103       0       0           0
+8105       0       0           !alt_match_null_string_p(p1, p1 + mcnt, reg_info)
+8113       0       0           stop_memory
+8119       0       0           default
+8120       0       0           !common_op_match_null_string_p(&p1, end, reg_info)
+8141       0       0           p1 < end
+8149       0       0           on_failure_jump
+8151       0       0           0
+8151       0       0           0
+8155       0       0           default
+8156       0       0           !common_op_match_null_string_p(&p1, end, reg_info)
+8182       0       0           no_op
+8183       0       0           begline
+8184       0       0           endline
+8185       0       0           begbuf
+8186       0       0           endbuf
+8187       0       0           wordbeg
+8188       0       0           wordend
+8189       0       0           wordbound
+8190       0       0           notwordbound
+8198       0       0           start_memory
+8206       0       0           ((reg_info[reg_no]).bits.match_null_string_p) == 3
+8209       0       0           !ret
+8214       0       0           jump
+8215       0       0           0
+8215       0       0           0
+8216       0       0           mcnt >= 0
+8222       0       0           succeed_n
+8225       0       0           0
+8225       0       0           0
+8227       0       0           mcnt == 0
+8230       0       0           0
+8230       0       0           0
+8237       0       0           duplicate
+8238       0       0           !((reg_info[*p1]).bits.match_null_string_p)
+8242       0       0           set_number_at
+8245       0       0           default
+8265       0       0           len
+8267       0       0           translate[*p1++] != translate[*p2++]
+8306       0       0           (cflags & 1)
+8320       0       0           cflags & (1 << 1)
+8325       0       0           preg->translate == ((void *)0)
+8333       0       0           i < 256
+8334       0       0           (1 && ((*__ctype_b_loc())[(int)((i))] & (unsigned short)_ISupper))
+8352       0       0           cflags & ((1 << 1) << 1)
+8370       0       0           ret == REG_ERPAREN
+8399       0       0           want_reg_info
+8404       0       0           regs.start == ((void *)0) || regs.end == ((void *)0)
+8419       0       0           want_reg_info
+8422       0       0           want_reg_info
+8424       0       0           ret >= 0
+8428       0       0           r < nmatch
+8441       0       0           ret >= 0
+8458       0       0           errcode < 0 || errcode >= (sizeof (re_error_msg) / sizeof (re_error_msg[0]))
+8470       0       0           !msg
+8475       0       0           errbuf_size != 0
+8477       0       0           msg_size > errbuf_size
+8496       0       0           preg->buffer != ((void *)0)
+8511       0       0           preg->fastmap != ((void *)0)
+8524       0       0           preg->translate != ((void *)0)
+8776       0       3           !r
+8788       0       36           !r
+8801       0       14           !r
+8837       72       9           i < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+8847       64       8           i < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+8857       0       0           i < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+8868       8       1           i < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+8869       0       8           s1[i] != s2[i]
+8884       1       1           i < dfa->cindex
+8885       1       0           equal(s, dfa->charclasses[i])
+8887       0       1           (dfa->cindex) >= (dfa->calloc)
+8887       0       0           (dfa->cindex) >= (dfa->calloc)
+9052       0       0           lexleft < len
+9071       4       0           i < 2
+9073       1       3           !lexleft
+9073       0       1           0 != 0
+9076       0       0           '\'
+9077       0       0           backslash
+9079       0       0           lexleft == 0
+9084       0       0           '^'
+9085       0       0           backslash
+9087       0       0           syntax_bits & ((((1) << 1) << 1) << 1) || lasttok == END || lasttok == LPAREN || lasttok == OR
+9094       0       0           '$'
+9095       0       0           backslash
+9097       0       0           syntax_bits & ((((1) << 1) << 1) << 1) || lexleft == 0 || (syntax_bits & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) ? lexleft > 0 && *lexptr == ')' : lexleft > 1 && lexptr[0] == '\' && lexptr[1] == ')') || (syntax_bits & ((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) ? lexleft > 0 && *lexptr == '|' : lexleft > 1 && lexptr[0] == '\' && lexptr[1] == '|') || ((syntax_bits & ((((((((((((syntax_bits & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9099       0       0           syntax_bits & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9102       0       0           syntax_bits & ((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9110       0       0           '1'
+9111       0       0           '2'
+9112       0       0           '3'
+9113       0       0           '4'
+9114       0       0           '5'
+9115       0       0           '6'
+9116       0       0           '7'
+9117       0       0           '8'
+9118       0       0           '9'
+9119       0       0           backslash && !(syntax_bits & (((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+9126       0       0           '<'
+9127       0       0           backslash
+9131       0       0           '>'
+9132       0       0           backslash
+9136       0       0           'b'
+9137       0       0           backslash
+9141       0       0           'B'
+9142       0       0           backslash
+9146       0       0           '?'
+9147       0       0           syntax_bits & (((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9149       0       0           backslash != ((syntax_bits & ((1) << 1)) != 0)
+9151       0       0           !(syntax_bits & (((((1) << 1) << 1) << 1) << 1)) && laststart
+9155       0       0           '*'
+9156       0       0           backslash
+9158       0       0           !(syntax_bits & (((((1) << 1) << 1) << 1) << 1)) && laststart
+9162       1       0           '+'
+9163       0       1           syntax_bits & (((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9165       0       1           backslash != ((syntax_bits & ((1) << 1)) != 0)
+9167       0       1           !(syntax_bits & (((((1) << 1) << 1) << 1) << 1)) && laststart
+9171       0       0           '{'
+9172       0       0           !(syntax_bits & ((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+9174       0       0           backslash != ((syntax_bits & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)) == 0)
+9182       0       0           !lexleft
+9182       0       0           'unfinished repeat count' != 0
+9183       0       0           (1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISdigit))
+9196       0       0           !lexleft
+9196       0       0           'unfinished repeat count' != 0
+9197       0       0           !(1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISdigit))
+9210       0       0           c != ','
+9212       0       0           c == ','
+9215       0       0           !lexleft
+9215       0       0           'unfinished repeat count' != 0
+9216       0       0           !(1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISdigit))
+9230       0       0           !(syntax_bits & (((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+9232       0       0           c != '\'
+9234       0       0           !lexleft
+9234       0       0           'unfinished repeat count' != 0
+9236       0       0           c != '}'
+9241       0       0           '|'
+9242       0       0           syntax_bits & (((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9244       0       0           backslash != ((syntax_bits & ((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)) == 0)
+9249       0       0           '
+'
+9250       0       0           syntax_bits & (((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) || backslash || !(syntax_bits & ((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1))
+9257       0       0           '('
+9258       0       0           backslash != ((syntax_bits & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)) == 0)
+9264       0       0           ')'
+9265       0       0           backslash != ((syntax_bits & ((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)) == 0)
+9267       0       0           parens == 0 && syntax_bits & ((((((((((((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9273       0       0           '.'
+9274       0       0           backslash
+9278       0       0           !(syntax_bits & (((((((1) << 1) << 1) << 1) << 1) << 1) << 1))
+9280       0       0           syntax_bits & ((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9285       0       0           'w'
+9286       0       0           'W'
+9287       0       0           !backslash
+9290       0       0           c2 < (1 << 8)
+9291       0       0           (1 && ((*__ctype_b_loc())[(int)((c2))] & (unsigned short)_ISalnum))
+9301       0       0           c == 'W'
+9306       2       0           '['
+9307       0       2           backslash
+9310       0       2           !lexleft
+9310       0       0           'Unbalanced [' != 0
+9311       0       2           c == '^'
+9313       0       0           !lexleft
+9313       0       0           'Unbalanced [' != 0
+9318       0       2           (c = c1) != ']'
+9326       0       2           c == '[' && (syntax_bits & (((1) << 1) << 1))
+9327       0       0           prednames[c1].name
+9328       0       0           looking_at(prednames[c1].name)
+9330       0       0           c2 < (1 << 8)
+9331       0       0           (*prednames[c1].pred)(c2)
+9335       0       0           !lexleft
+9335       0       0           'Unbalanced [' != 0
+9338       0       2           c == '\' && (syntax_bits & (1))
+9339       0       0           !lexleft
+9339       0       0           'Unbalanced [' != 0
+9340       0       2           !lexleft
+9340       0       0           'Unbalanced [' != 0
+9341       2       0           c1 == '-'
+9343       0       2           !lexleft
+9343       0       0           'Unbalanced [' != 0
+9344       0       2           c2 == ']'
+9354       0       2           c2 == '\' && (syntax_bits & (1))
+9356       0       0           !lexleft
+9356       0       0           'Unbalanced [' != 0
+9357       0       2           !lexleft
+9357       0       0           'Unbalanced [' != 0
+9362       20       2           c <= c2
+9365       0       20           case_fold
+9366       0       0           (1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISupper))
+9376       0       0           (1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISlower))
+9392       0       2           invert
+9395       0       0           syntax_bits & (((((((((1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
+9401       0       0           default
+9404       0       0           case_fold && (1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISalpha))
+9416       0       0           ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISupper)
+9454       3       3           (dfa->tindex) >= (dfa->talloc)
+9454       3       3           (dfa->tindex) >= (dfa->talloc)
+9459       0       0           QMARK
+9460       0       0           STAR
+9461       1       0           PLUS
+9464       2       0           CAT
+9465       2       0           OR
+9466       2       0           ORTOP
+9470       3       0           default
+9472       3       0           EMPTY
+9476       2       4           depth > dfa->depth
+9488       2       0           (tok >= 0 && tok < (1 << 8)) || tok >= CSET || tok == BACKREF || tok == BEGLINE || tok == ENDLINE || tok == BEGWORD || tok == ENDWORD || tok == LIMWORD || tok == NOTLIMWORD
+9495       0       0           tok == LPAREN
+9499       0       0           tok != RPAREN
+9515       0       0           default
+9517       0       0           QMARK
+9518       0       0           STAR
+9519       0       0           PLUS
+9521       0       0           CAT
+9522       0       0           OR
+9523       0       0           ORTOP
+9536       0       0           i < ntokens
+9546       1       2           tok == QMARK || tok == STAR || tok == PLUS || tok == REPMN
+9547       0       1           tok == REPMN
+9551       0       0           maxrep == 0
+9553       0       0           minrep == 0
+9555       0       0           i < minrep
+9560       0       0           i < maxrep
+9579       1       1           tok != RPAREN && tok != OR && tok >= 0
+9591       0       1           tok == OR
+9595       0       0           toplevel
+9619       0       1           !syntax_bits_set
+9627       0       1           tok != END
+9633       0       1           d->nregexps
+9649       19       15           i < src->nelem
+9666       9       11           i < s->nelem && p.strchr < s->elems[i].strchr
+9668       2       9           i < s->nelem && p.strchr == s->elems[i].strchr
+9674       9       9           i < s->nelem
+9694       1       3           i < s1->nelem && j < s2->nelem
+9695       1       0           s1->elems[i].strchr > s2->elems[j].strchr
+9697       0       0           s1->elems[i].strchr < s2->elems[j].strchr
+9704       2       3           i < s1->nelem
+9706       1       3           j < s2->nelem
+9718       0       0           i < s->nelem
+9719       0       0           p.strchr == s->elems[i].strchr
+9721       0       0           i < s->nelem
+9722       0       0           i < s->nelem
+9741       0       7           newline
+9742       0       7           letter
+9744       12       7           i < s->nelem
+9748       9       3           i < d->sindex
+9750       5       4           hash != d->states[i].hash || s->nelem != d->states[i].elems.nelem || newline != d->states[i].newline || letter != d->states[i].letter
+9753       6       4           j < s->nelem
+9754       0       6           s->elems[j].constraint != d->states[i].elems.elems[j].constraint || s->elems[j].strchr != d->states[i].elems.elems[j].strchr
+9758       4       0           j == s->nelem
+9763       2       1           (d->sindex) >= (d->salloc)
+9763       2       2           (d->sindex) >= (d->salloc)
+9772       6       3           j < s->nelem
+9773       1       5           d->tokens[s->elems[j].strchr] < 0
+9776       1       0           (((constraint) & 1 << (((newline) ? 2 : 0) + ((0) ? 1 : 0) + 4)) && ((constraint) & 1 << (((letter) ? 2 : 0) + ((0) ? 1 : 0)))) || (((constraint) & 1 << (((newline) ? 2 : 0) + ((0) ? 1 : 0) + 4)) && ((constraint) & 1 << (((letter) ? 2 : 0) + ((1) ? 1 : 0)))) || (((constraint) & 1 << (((newline) ? 2 : 0) + ((1) ? 1 : 0) + 4)) && ((constraint) & 1 << (((letter) ? 2 : 0) + ((0) ? 1 : 0)))) || (((constraint) & 1 << (((newline) ? 2 : 0) + ((1) ? 1 : 0) + 4)) && ((constraint) & 1 << (((letter) ? 2 : 0(newline)
+9776       0       1           (newline)
+9776       0       1           (0)
+9776       0       1           (letter)
+9776       0       1           (0)
+9777       0       0           (newline)
+9777       0       0           (0)
+9777       0       0           (letter)
+9777       0       0           (1)
+9778       0       0           (newline)
+9778       0       0           (1)
+9778       0       0           (letter)
+9778       0       0           (0)
+9779       0       0           (newline)
+9779       0       0           (1)
+9779       0       0           (letter)
+9779       0       0           (1)
+9781       1       0           !d->states[i].first_end
+9784       0       5           d->tokens[s->elems[j].strchr] == BACKREF
+9810       24       4           i < d->tindex
+9813       4       4           i < s->nelem
+9814       0       4           d->tokens[s->elems[i].strchr] >= (1 << 8) && d->tokens[s->elems[i].strchr] != BACKREF && d->tokens[s->elems[i].strchr] < CSET
+9821       0       0           visited[old.strchr]
+9829       0       0           BEGLINE
+9832       0       0           ENDLINE
+9835       0       0           BEGWORD
+9838       0       0           ENDWORD
+9841       0       0           LIMWORD
+9844       0       0           NOTLIMWORD
+9847       0       0           default
+9850       0       0           j < d->follows[old.strchr].nelem
+9895       6       1           i < d->tindex
+9901       6       1           i < d->tindex
+9907       0       0           EMPTY
+9915       0       0           STAR
+9916       1       0           PLUS
+9922       1       1           j < nlastpos[-1]
+9925       0       1           (merged.nelem - 1) >= (nalloc[pos[j].strchr])
+9925       0       0           (merged.nelem - 1) >= (nalloc[pos[j].strchr])
+9930       1       0           QMARK
+9932       0       1           d->tokens[i] != PLUS
+9936       2       0           CAT
+9942       2       2           j < nlastpos[-2]
+9945       1       1           (merged.nelem - 1) >= (nalloc[pos[j].strchr])
+9945       1       1           (merged.nelem - 1) >= (nalloc[pos[j].strchr])
+9952       0       2           nullable[-2]
+9960       0       2           nullable[-1]
+9965       2       2           j >= 0
+9977       0       0           OR
+9978       0       0           ORTOP
+9992       3       0           default
+10012       6       1           i < d->tindex
+10013       3       3           d->tokens[i] < (1 << 8) || d->tokens[i] == BACKREF || d->tokens[i] >= CSET
+10019       0       3           d->follows[i].nelem < merged.nelem
+10027       1       1           i < nfirstpos[-1]
+10033       1       1           i < merged.nelem
+10034       0       1           (((merged.elems[i].constraint) & 192) >> 2 != ((merged.elems[i].constraint) & 48))
+10081       1       2           !initialized
+10084       256       1           i < (1 << 8)
+10085       62       194           (1 && ((*__ctype_b_loc())[(int)((i))] & (unsigned short)_ISalnum))
+10100       6       3           i < d->states[s].elems.nelem
+10103       0       6           d->tokens[pos.strchr] >= 0 && d->tokens[pos.strchr] < (1 << 8)
+10105       5       1           d->tokens[pos.strchr] >= CSET
+10112       0       5           pos.constraint != 255
+10114       0       0           !((pos.constraint) & 1 << (((d->states[s].newline) ? 2 : 0) + ((1) ? 1 : 0) + 4))
+10114       0       0           (d->states[s].newline)
+10114       0       0           (1)
+10117       0       0           !((pos.constraint) & 1 << (((d->states[s].newline) ? 2 : 0) + ((0) ? 1 : 0) + 4))
+10117       0       0           (d->states[s].newline)
+10117       0       0           (0)
+10119       0       0           j < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10121       0       0           !((pos.constraint) & 1 << (((d->states[s].letter) ? 2 : 0) + ((1) ? 1 : 0)))
+10121       0       0           (d->states[s].letter)
+10121       0       0           (1)
+10123       0       0           j < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10125       0       0           !((pos.constraint) & 1 << (((d->states[s].letter) ? 2 : 0) + ((0) ? 1 : 0)))
+10125       0       0           (d->states[s].letter)
+10125       0       0           (0)
+10127       0       0           j < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10131       0       0           j < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int))) && !matches[j]
+10133       0       0           j == (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10137       2       3           j < ngrps
+10142       0       2           d->tokens[pos.strchr] >= 0 && d->tokens[pos.strchr] < (1 << 8) && !tstbit(d->tokens[pos.strchr], labels[j])
+10149       16       2           k < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10150       2       14           (intersect[k] = matches[k] & labels[j][k])
+10151       0       2           !intersectf
+10156       16       2           k < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10161       0       16           (leftovers[k] = ~match & label)
+10162       0       16           (matches[k] = match & ~label)
+10166       0       2           leftoversf
+10181       2       0           !matchesf
+10187       3       2           j == ngrps
+10204       3       0           d->searchflag
+10208       3       3           i < d->states[0].elems.nelem
+10210       0       3           (((d->states[0].elems.elems[i].constraint) & 192) >> 2 != ((d->states[0].elems.elems[i].constraint) & 48))
+10212       0       3           (((d->states[0].elems.elems[i].constraint) & 12) >> 2 != ((d->states[0].elems.elems[i].constraint) & 3))
+10217       0       3           wants_newline
+10221       0       3           wants_letter
+10225       768       3           i < (1 << 8)
+10226       3       765           i == '
+'
+10228       186       579           (1 && ((*__ctype_b_loc())[(int)((i))] & (unsigned short)_ISalnum))
+10242       0       0           i < (1 << 8)
+10245       3       3           i < ngrps
+10251       5       3           j < grps[i].nelem
+10252       7       5           k < d->follows[grps[i].elems[j].strchr].nelem
+10257       3       0           d->searchflag
+10258       3       3           j < d->states[0].elems.nelem
+10263       0       3           tstbit('
+', labels[i])
+10264       0       0           j < follows.nelem
+10265       0       0           (((follows.elems[j].constraint) & 192) >> 2 != ((follows.elems[j].constraint) & 48))
+10269       6       0           j < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10270       3       3           labels[i][j] & letters[j]
+10272       3       0           j < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10273       8       3           j < follows.nelem
+10274       0       8           (((follows.elems[j].constraint) & 12) >> 2 != ((follows.elems[j].constraint) & 3))
+10279       0       3           wants_newline
+10283       0       3           wants_letter
+10289       24       3           j < (((1 << 8) + (8 * sizeof(int)) - 1) / (8 * sizeof(int)))
+10290       768       24           k < (8 * sizeof(int))
+10291       30       738           labels[i][j] & 1 << k
+10295       0       30           c == '
+'
+10297       30       0           (1 && ((*__ctype_b_loc())[(int)((c))] & (unsigned short)_ISalnum))
+10307       0       0           c < (1 << 8)
+10312       3       3           i < ngrps
+10330       0       3           d->trcount >= 1024
+10332       0       0           i < d->tralloc
+10333       0       0           d->trans[i]
+10342       0       0           d->fails[i]
+10358       1       2           ((((*d).states[s].constraint) & 1 << (((d->states[s].newline) ? 2 : 0) + ((1) ? 1 : 0) + 4)) && (((*d).states[s].constraint) & 1 << (((d->states[s].letter) ? 2 : 0) + ((0) ? 1 : 0))))
+10358       0       3           (d->states[s].newline)
+10358       3       0           (1)
+10358       0       1           (d->states[s].letter)
+10358       0       1           (0)
+10361       1       2           ((((*d).states[s].constraint) & 1 << (((d->states[s].newline) ? 2 : 0) + ((0) ? 1 : 0) + 4)) && (((*d).states[s].constraint) & 1 << (((d->states[s].letter) ? 2 : 0) + ((1) ? 1 : 0))))
+10361       0       3           (d->states[s].newline)
+10361       0       3           (0)
+10361       0       1           (d->states[s].letter)
+10361       1       0           (1)
+10364       1       2           ((((*d).states[s].constraint) & 1 << (((d->states[s].newline) ? 2 : 0) + ((0) ? 1 : 0) + 4)) && (((*d).states[s].constraint) & 1 << (((d->states[s].letter) ? 2 : 0) + ((0) ? 1 : 0))))
+10364       0       3           (d->states[s].newline)
+10364       0       3           (0)
+10364       0       1           (d->states[s].letter)
+10364       0       1           (0)
+10374       768       3           i < (1 << 8)
+10375       2       766           trans[i] >= d->tralloc
+10379       2       2           trans[i] >= d->tralloc
+10386       3       2           oldalloc < d->tralloc
+10406       1       2           ((*d).states[s].constraint)
+10442       1       97           !sbit_init
+10447       256       1           i < (1 << 8)
+10448       1       255           i == '
+'
+10450       62       193           (1 && ((*__ctype_b_loc())[(int)((i))] & (unsigned short)_ISalnum))
+10464       1       97           !d->tralloc
+10475       10940       1           (t = trans[s]) != 0
+10476       148132       4947           (t = trans[s]) != 0
+10479       5993       153079           !(t = trans[s1])
+10489       88       10853           s >= 0 && p <= (unsigned char *)end && d->fails[s]
+10491       88       0           d->success[s] & sbit[*p]
+10493       88       0           backref
+10494       0       88           d->states[s].backref
+10507       0       10853           count && (char *)p <= end && p[-1] == '
+'
+10511       10       10843           (char *)p > end
+10518       2       10841           s >= 0
+10525       0       10841           p[-1] == '
+' && newline
+10563       0       1           case_fold
+10569       0       0           !copy
+10574       0       0           i < len
+10575       0       0           (1 && ((*__ctype_b_loc())[(int)((s[i]))] & (unsigned short)_ISupper))
+10616       0       0           i < d->sindex
+10619       0       0           i < d->tindex
+10620       0       0           d->follows[i].elems
+10623       0       0           i < d->tralloc
+10624       0       0           d->trans[i]
+10626       0       0           d->fails[i]
+10631       0       0           dm
+10647       0       1           (new == ((void *)0))
+10652       0       1           old == ((void *)0)
+10658       1       0           newsize == 0
+10661       0       0           old == ((void *)0)
+10669       0       0           result != ((void *)0) && new != ((void *)0)
+10702       0       0           *cp != '
+10703       0       0           strncmp(cp, lookfor, len) == 0
+10716       28       0           cp != ((void *)0)
+10730       0       9           cpp == ((void *)0)
+10736       0       9           cpp[i] != ((void *)0)
+10759       0       0           cpp == ((void *)0)
+10769       0       0           (new = icpyalloc(new)) == ((void *)0)
+10784       0       0           cpp[i] != ((void *)0)
+10789       0       0           istrstr(cpp[i], new) != ((void *)0)
+10800       0       0           cpp[j] != ((void *)0)
+10805       0       0           istrstr(new, cpp[j]) == ((void *)0)
+10814       0       0           --i == j
+10825       0       0           cpp == ((void *)0)
+10857       0       0           left == ((void *)0) || right == ((void *)0)
+10872       0       0           cpp == ((void *)0)
+10887       0       0           *lcp != '
+10891       0       0           rcp != ((void *)0)
+10897       0       0           lcp[i] != '
+10899       0       0           i > len
+10903       0       0           len == 0
+10905       0       0           (cpp = enlist(cpp, lcp, len)) == ((void *)0)
+10922       0       1           old == ((void *)0) || new == ((void *)0)
+10936       0       1           new[i] != ((void *)0)
+10943       0       0           old == ((void *)0)
+10964       0       0           left == ((void *)0) || right == ((void *)0)
+10979       0       0           both == ((void *)0)
+10994       0       0           left[lnum] != ((void *)0)
+11000       0       0           right[rnum] != ((void *)0)
+11007       0       0           temp == ((void *)0)
+11022       0       0           both == ((void *)0)
+11070       0       1           musts == ((void *)0)
+11077       7       1           i <= dfa->tindex
+11079       7       1           i <= dfa->tindex
+11085       0       7           mp[i].in == ((void *)0) || mp[i].left == ((void *)0) || mp[i].right == ((void *)0) || mp[i].is == ((void *)0)
+11112       5       0           ri < dfa->tindex
+11116       0       0           LPAREN
+11117       0       0           RPAREN
+11119       0       0           EMPTY
+11120       0       0           BEGLINE
+11121       0       0           ENDLINE
+11122       0       0           BEGWORD
+11123       0       0           ENDWORD
+11124       0       0           LIMWORD
+11125       0       0           NOTLIMWORD
+11126       0       0           BACKREF
+11129       0       0           STAR
+11130       0       0           QMARK
+11131       0       0           mp <= musts
+11136       0       0           OR
+11137       0       0           ORTOP
+11138       0       0           mp < &musts[2]
+11149       0       0           strcmp(lmp->is, rmp->is) != 0
+11153       0       0           lmp->left[i] != '
+11160       0       0           n > rn
+11162       0       0           i < n
+11163       0       0           lmp->right[ln - i - 1] != rmp->right[rn - i - 1]
+11165       0       0           j < i
+11169       0       0           new == ((void *)0)
+11180       1       0           PLUS
+11181       0       1           mp <= musts
+11186       1       0           END
+11187       0       1           mp != &musts[1]
+11189       0       1           musts[0].in[i] != ((void *)0)
+11194       0       0           strlen(musts[0].in[i]) > strlen(result)
+11196       1       0           strcmp(result, musts[0].is) == 0
+11199       1       0           CAT
+11200       0       1           mp < &musts[2]
+11212       0       1           lmp->in == ((void *)0)
+11218       0       1           lmp->right[0] != '
+11224       0       0           tp == ((void *)0)
+11231       0       0           tp == ((void *)0)
+11240       0       0           lmp->in == ((void *)0)
+11248       0       1           lmp->is[0] != '
+11252       0       0           lmp->left == ((void *)0)
+11260       1       0           rmp->is[0] == '
+11263       0       1           lmp->right == ((void *)0)
+11270       0       1           lmp->is[0] != '
+11273       0       0           lmp->is == ((void *)0)
+11284       2       0           default
+11285       0       2           t < END
+11290       0       2           t == '
+11295       2       0           t >= CSET
+11307       0       0           mp->in == ((void *)0)
+11320       0       1           strlen(result)
+11330       7       1           i <= dfa->tindex
+11564       0       0           !kwset
+11570       0       0           (__o->chunk_limit - __o->next_free < __len)
+11570       0       0           __o1->next_free == value
+11570       0       0           (__o1->next_free - (char *)__o1->chunk > __o1->chunk_limit - (char *)__o1->chunk)
+11571       0       0           !kwset->trie
+11614       0       0           len--
+11616       0       0           kwset->trans
+11626       0       0           link && label != link->label
+11629       0       0           label < link->label
+11638       0       0           !link
+11640       0       0           (__o->chunk_limit - __o->next_free < __len)
+11640       0       0           __o1->next_free == value
+11640       0       0           (__o1->next_free - (char *)__o1->chunk > __o1->chunk_limit - (char *)__o1->chunk)
+11642       0       0           !link
+11646       0       0           (__o->chunk_limit - __o->next_free < __len)
+11646       0       0           __o1->next_free == value
+11646       0       0           (__o1->next_free - (char *)__o1->chunk > __o1->chunk_limit - (char *)__o1->chunk)
+11648       0       0           !link->trie
+11661       0       0           dirs[--depth] == L
+11667       0       0           depth && !links[depth]->balance
+11669       0       0           dirs[depth] == L
+11677       0       0           depth && ((dirs[depth] == L && --links[depth]->balance) || (dirs[depth] == R && ++links[depth]->balance))
+11680       0       0           default
+11682       0       0           (char)-2
+11683       0       0           default
+11685       0       0           L
+11690       0       0           R
+11694       0       0           t->balance != 1
+11695       0       0           t->balance != (char)-1
+11700       0       0           2
+11701       0       0           default
+11703       0       0           R
+11708       0       0           L
+11712       0       0           t->balance != 1
+11713       0       0           t->balance != (char)-1
+11720       0       0           dirs[depth - 1] == L
+11732       0       0           !trie->accepting
+11737       0       0           trie->depth < kwset->mind
+11739       0       0           trie->depth > kwset->maxd
+11752       0       0           !tree
+11770       0       0           !tree
+11778       0       0           fail
+11781       0       0           link && tree->label != link->label
+11782       0       0           tree->label < link->label
+11786       0       0           link
+11805       0       0           !tree
+11809       0       0           depth < delta[tree->label]
+11819       0       0           !b
+11821       0       0           !hasevery(a, b->llink)
+11823       0       0           !hasevery(a, b->rlink)
+11825       0       0           a && b->label != a->label
+11826       0       0           b->label < a->label
+11840       0       0           !tree
+11873       0       0           kwset->mind < 256
+11874       0       0           i < ((127 * 2 + 1) + 1)
+11881       0       0           i < ((127 * 2 + 1) + 1)
+11890       0       0           kwset->words == 1 && kwset->trans == 0
+11893       0       0           (__o->chunk_limit - __o->next_free < __len)
+11893       0       0           __o1->next_free == value
+11893       0       0           (__o1->next_free - (char *)__o1->chunk > __o1->chunk_limit - (char *)__o1->chunk)
+11894       0       0           i >= 0
+11900       0       0           i < kwset->mind
+11905       0       0           i < kwset->mind - 1
+11906       0       0           kwset->target[i] == kwset->target[kwset->mind - 1]
+11913       0       0           curr
+11929       0       0           fail
+11934       0       0           !hasevery(fail->links, curr->links)
+11935       0       0           curr->depth - fail->depth < fail->shift
+11941       0       0           curr->accepting && fail->maxshift > curr->depth - fail->depth
+11948       0       0           curr
+11950       0       0           curr->maxshift > curr->parent->maxshift
+11952       0       0           curr->shift > curr->maxshift
+11958       0       0           i < ((127 * 2 + 1) + 1)
+11966       0       0           (trans = kwset->trans) != 0
+11967       0       0           i < ((127 * 2 + 1) + 1)
+11974       0       0           i < ((127 * 2 + 1) + 1)
+11983       0       0           (trans = kwset->trans) != 0
+11984       0       0           i < ((127 * 2 + 1) + 1)
+11991       0       0           i < ((127 * 2 + 1) + 1)
+12018       0       0           len == 0
+12020       0       0           len > size
+12022       0       0           len == 1
+12032       0       0           size > 12 * len
+12036       0       0           tp <= ep
+12040       0       0           d == 0
+12045       0       0           d == 0
+12050       0       0           d == 0
+12057       0       0           ((unsigned char)(tp[-2])) == gc
+12059       0       0           i <= len && ((unsigned char)(tp[-i])) == ((unsigned char)(sp[-i]))
+12061       0       0           i > len
+12071       0       0           d <= ep - tp
+12074       0       0           d != 0
+12076       0       0           tp[-2] == gc
+12078       0       0           i <= len && ((unsigned char)(tp[-i])) == ((unsigned char)(sp[-i]))
+12080       0       0           i > len
+12108       0       0           len < kwset->mind
+12115       0       0           (d = kwset->mind) != 0
+12123       0       0           len >= 4 * kwset->mind
+12128       0       0           lim - end >= d
+12130       0       0           qlim && end <= qlim
+12133       0       0           (d = delta[c = *end]) && end < qlim
+12143       0       0           d
+12147       0       0           trie->accepting
+12153       0       0           beg > text
+12155       0       0           trans
+12157       0       0           tree && c != tree->label
+12158       0       0           c < tree->label
+12162       0       0           tree
+12165       0       0           trie->accepting
+12175       0       0           mch
+12184       0       0           lim - mch > kwset->maxd
+12188       0       0           lim - end >= d
+12190       0       0           (d = delta[c = (end += d)[-1]]) != 0
+12193       0       0           !(trie = next[c])
+12198       0       0           trie->accepting && beg <= mch
+12204       0       0           beg > text
+12206       0       0           trans
+12208       0       0           tree && c != tree->label
+12209       0       0           c < tree->label
+12213       0       0           tree
+12216       0       0           trie->accepting && beg <= mch
+12226       0       0           lmch
+12231       0       0           !d
+12235       0       0           kwsmatch
+12255       0       0           kwset->words == 1 && kwset->trans == 0
+12258       0       0           kwsmatch != 0 && ret != 0
+12278       0       0           __obj > (void *)__o->chunk && __obj < (void *)__o->chunk_limit
+12336       0       0           match_icase
+12337       0       0           i < ((127 * 2 + 1) + 1)
+12342       0       0           (1 && ((*__ctype_b_loc())[(int)((i))] & (unsigned short)_ISupper))
+12352       0       0           !(kwset = kwsalloc(match_icase ? trans : (char *)0))
+12352       0       0           match_icase
+12366       0       1           dfa_1.musts
+12372       0       0           dm
+12374       0       0           !dm->exact
+12377       0       0           (err = kwsincr(kwset, dm->must, strlen(dm->must))) != 0
+12382       0       0           dm
+12384       0       0           dm->exact
+12386       0       0           (err = kwsincr(kwset, dm->must, strlen(dm->must))) != 0
+12389       0       0           (err = kwsprep(kwset)) != 0
+12407       0       0           (err = re_compile_pattern(pattern, size, &regex)) != 0
+12416       0       0           match_words || match_lines
+12429       0       0           match_lines
+12431       0       0           match_words
+12438       0       0           match_words
+12440       0       0           match_lines
+12462       1       0           strcmp(matcher, 'posix-egrep') == 0
+12473       0       1           (err = re_compile_pattern(pattern, size, &regex)) != 0
+12482       0       1           match_words || match_lines
+12495       0       0           match_lines
+12497       0       0           match_words
+12504       0       0           match_words
+12506       0       0           match_lines
+12532       98       0           end < buflim
+12534       0       98           kwset
+12538       0       0           !beg
+12543       0       0           !end
+12545       0       0           beg > buf && beg[-1] != '
+'
+12548       0       0           kwsm.strchr < lastexact
+12550       0       0           !dfaexec(&dfa_1, beg, end, 0, (int *)0, &backref)
+12557       0       0           !backref
+12566       10       88           !beg
+12570       0       88           !end
+12572       2403       88           beg > buf && beg[-1] != '
+'
+12575       88       0           !backref
+12581       0       0           (start = re_search(&regex, beg, end - beg, 0, end - beg, &regs)) >= 0
+12584       0       0           !match_lines && !match_words || match_lines && len == end - beg
+12592       0       0           match_words
+12593       0       0           start >= 0
+12595       0       0           (start == 0 || !((1 && ((*__ctype_b_loc())[(int)((beg[start - 1]))] & (unsigned short)_ISalnum)) || (beg[start - 1]) == '_')) && (len == end - beg || !((1 && ((*__ctype_b_loc())[(int)((beg[start + len]))] & (unsigned short)_ISalnum)) || (beg[start + len]) == '_'))
+12614       0       0           len > 0
+12621       0       0           len <= 0
+12624       0       0           start == end - beg
+12640       88       0           end < buflim
+12653       0       0           beg < pattern + size
+12655       0       0           lim < pattern + size && *lim != '
+'
+12657       0       0           (err = kwsincr(kwset, beg, lim - beg)) != 0
+12659       0       0           lim < pattern + size
+12665       0       0           (err = kwsprep(kwset)) != 0
+12679       0       0           beg <= buf + size
+12681       0       0           !(beg = kwsexec(kwset, beg, buf + size - beg, &kwsmatch))
+12684       0       0           match_lines
+12686       0       0           beg > buf && beg[-1] != '
+'
+12688       0       0           beg + len < buf + size && beg[len] != '
+'
+12692       0       0           match_words
+12693       0       0           len && try
+12695       0       0           try > buf && ((1 && ((*__ctype_b_loc())[(int)(((unsigned char)try[-1]))] & (unsigned short)_ISalnum)) || ((unsigned char)try[-1]) == '_')
+12705       0       0           try + len < buf + size && ((1 && ((*__ctype_b_loc())[(int)(((unsigned char)try[len]))] & (unsigned short)_ISalnum)) || ((unsigned char)try[len]) == '_')
+12728       0       0           (end = memchr(beg + len, '
+', (buf + size) - (beg + len))) != 0
+12733       0       0           beg > buf && beg[-1] != '
+'
+Covered: 463 / Total: 3079 = 15.037350%
