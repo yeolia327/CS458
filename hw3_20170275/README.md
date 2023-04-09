@@ -4,7 +4,7 @@
 Clang
 
 ## how to use
-1. you need a preprocessed single C file <f>.i
+1. you need a preprocessed single C file sample.i
 
 ex: gcc -E grep.c -o grep.i
 
@@ -15,7 +15,7 @@ ex: gcc -E grep.c -o grep.i
 ./kcov-branch-identify grep.i
 ```
 
-then you will get <f-cov>.i file and branch information like below.
+then you will get sampel-cov.i file and branch information like below.
 
 ```
 ...
@@ -27,12 +27,12 @@ then you will get <f-cov>.i file and branch information like below.
 Total number of branches: 3079
 ```
 
-4. Compile <f-cov>.i file
+4. Compile sample-cov.i file
 ```
 gcc grep-cov.i -o grep-cov
 ```
 
-5. execute <f-cov> file, then you will get coverage.dat file, which contains branch coverage information
+5. execute sample-cov file, then you will get coverage.dat file, which contains branch coverage information
 
 ```
 ./grep-cov -n "if" grep.c
