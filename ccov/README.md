@@ -36,6 +36,10 @@ sw: 657.6 -> 0, 0
 
 ...
 
+br: 9726.0 -> 1249, 15240
+
+...
+
 br: 10906.2 -> 0, 0
 br: 10921.0 -> 0, 0
 br: 10926.0 -> 0, 0
@@ -45,3 +49,8 @@ Total: 3419 branches, Covered: 350 branches
 ```
 
 Here, the br means br instrument in LLVM IR and sw means switch in LLVM IR
+
+br: 9726.0 -> 1249, 15240
+
+means first branch at line 9726 taken 1249 time, not take 15240 times
+
